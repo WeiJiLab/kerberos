@@ -6,7 +6,7 @@ $ docker build -t kerberos .
 ```
 
 ## Ports
-｜ Port | Description |
+|Port|Description|
 |---|---|
 |88|KDC Server|
 |749|KDC Admin Server|
