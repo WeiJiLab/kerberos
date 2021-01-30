@@ -1,8 +1,12 @@
-FROM alpine
+FROM alpine:alpine
 
 ENV KEYTABS_FOLDER /opt/keytabs
+ENV LOGS_FOLDER /var/log/kerberos
 
-VOLUME [ "${KEYTABS_FOLDER}" ]
+VOLUME [ \
+    "${KEYTABS_FOLDER}", \
+    "${LOGS_FOLDER}" \
+    ]
 
 RUN apk add --update krb5-server
 
