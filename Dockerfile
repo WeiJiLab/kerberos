@@ -1,4 +1,4 @@
-FROM alpine:alpine
+FROM alpine
 
 ENV KEYTABS_FOLDER /opt/keytabs
 ENV LOGS_FOLDER /var/log/kerberos
